@@ -1,1 +1,47 @@
 @import "./reset.css";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  height: 65px;
+  padding: 0 1rem;
+  color: white;
+}
+.burger {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.line {
+  height: 2px;
+  width: 20px;
+  background-color: white;
+}
+
+.drop-down-content {
+  position: absolute;
+  right: 0;
+  background-color: brown;
+  font-size: 1.2rem;
+  visibility: hidden;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  color: white;
+  height: calc(100vh - 65px);
+  width: 300px;
+}
+
+.visible {
+  visibility: visible;
+}
